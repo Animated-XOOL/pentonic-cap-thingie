@@ -1,0 +1,28 @@
+body{
+    background: rgb(121,129,214);
+background: radial-gradient(circle, rgba(121,129,214,1) 0%, rgba(57,65,75,1) 100%);
+}
+h3{
+    background-color: rgba(33, 19, 38, 0.622);
+    color: rgb(204, 204, 204);
+}
+#camera 
+  {
+    border: 2px dashed rgba(37, 8, 43, 0.426);
+    width: 350px;
+    height: 300px;
+  }
+  p{
+    color: rgb(204, 204, 204);
+  }
+  b{
+    background-color: rgba(0, 0, 0, 0.161);
+    color: rgb(204, 204, 204);
+  }
+  label{
+    background-color: rgba(46, 25, 49, 0.161);
+    color: rgb(28, 28, 76);
+  }
+  #no{
+    float: right;
+  }

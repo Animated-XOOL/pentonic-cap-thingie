@@ -1,0 +1,50 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+  
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <br> <br>
+        <h3> ▌AI GUESSES THE IMAGE (kinda glitchy)▐</h3>
+        <b class="name_of_objects">
+          <p style="font-size: 22px;font-family: ms 'Courier New', Courier, monospace;">■ Model is trained to identify between blue and black pentonic caps ■</p>
+         ☼ black pentonic cap may sometimes not come, try to move the pen around
+          <hr>
+         ☼ blue pentonic cap does come but it has chances of not being 100%
+          <hr>
+         ☼ there is a no pen cap but that glitches, a lot, so just dont try to use it
+          <hr>
+        </b>
+
+        <label>Webcam View -</label>
+        <div id="camera"></div>
+        <br><br>
+        <div id="result"></div>     
+        <br><br>
+        <button onclick="take_snapshot();" class="btn btn-info">take pic (make sure pen is in the webcam)</button>
+        <br><br>
+        <button onclick="check();" class="btn btn-succes"> send ai the picture to guess</button>
+        <br><br>
+
+        <p style="font-size:22px;">AI guessses it is as: <span id="result_object_name"></span></p>
+        <p style="font-size: 22px;">the AI takes takes it as <span id="result_object_accuracy"> of a </span><span id="result_object_name"></span></p>
+        <br><br>
+        <label> is ai correct or not correct? ►    </label>
+      </center>
+      <button id="yes" class="btn btn-success"> Yes ai is right ☻</button> <button id="no" class="btn btn-danger"> No ai is wrong ☺</button>
+    </div>
+  </body>
+</html>
+
+ 
